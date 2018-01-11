@@ -1,0 +1,19 @@
+{
+  "name": "laravel-limesurvey-api/handle",
+  "description": "limesurvey api handle base on laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "du-lei",
+      "email": "duleijob@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "LaravelLimesurveyApi\\Handle\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {}
+}
