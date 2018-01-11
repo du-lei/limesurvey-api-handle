@@ -11,7 +11,7 @@ class LimesurveyApiHandleTest extends TestCase
 
     public function setUp ()
     {
-//        $this->limesurveyApiHandle = new \LaravelLimesurveyApi\Handle\LimesurveyApiHandle();
+        $this->limesurveyApiHandle = new \LaravelLimesurveyApi\Handle\LimesurveyApiHandle();
     }
 
     /**
@@ -19,7 +19,13 @@ class LimesurveyApiHandleTest extends TestCase
      */
     public function testLimesurveyApiHandleSurveyLists ()
     {
-        $this->assertEquals( 'test', 'test' );
+        $list_surveys = $this->limesurveyApiHandle->list_surveys();
+        $status = false;
+
+        if ( $list_surveys )
+            $status = true;
+
+        $this->assertTrue( $status );
     }
 
     /**
@@ -27,6 +33,12 @@ class LimesurveyApiHandleTest extends TestCase
      */
     public function testLimesurveyApiHandleUserLists ()
     {
-        $this->assertEquals( 'test123', 'test123' );
+        $list_users = $this->limesurveyApiHandle->list_users();
+        $status = false;
+
+        if ( $list_users )
+            $status = true;
+
+        $this->assertTrue( $status );
     }
 }

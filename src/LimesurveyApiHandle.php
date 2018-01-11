@@ -11,6 +11,12 @@ use org\jsonrpcphp\JsonRPCClient;
  */
 class LimesurveyApiHandle
 {
+    protected $url = 'http://test.bbooks.org/index.php?r=admin/remotecontrol';
+
+    protected $username = 'admin';
+
+    protected $password = 'admin888';
+
     protected $jsonRPCClient;
 
     protected $session_key;
@@ -27,12 +33,12 @@ class LimesurveyApiHandle
 
     private function get_jsonRPCClient ()
     {
-        $this->jsonRPCClient = new JsonRPCClient( config( 'jsonRPC.url' ) );
+        $this->jsonRPCClient = new JsonRPCClient( $this->url );
     }
 
     private function get_session_key ()
     {
-        $this->session_key = $this->jsonRPCClient->get_session_key( config( 'jsonRPC.username' ), config( 'jsonRPC.password' ) );
+        $this->session_key = $this->jsonRPCClient->get_session_key( $this->username, $this->password );
     }
 
     /**
