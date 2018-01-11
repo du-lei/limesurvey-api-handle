@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/du-lei/limesurvey-api-handle.svg?branch=master)](https://travis-ci.org/du-lei/limesurvey-api-handle)
+
 ## 开发laravel扩展
 ### 用于请求 ```limesurvey``` api 获取后台数据
 ### 用法
