@@ -14,7 +14,7 @@
       "LaravelLimesurveyApi\\Handle\\": "src/"
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
     "weberhofer/jsonrpcphp": "^2.2"
   },
