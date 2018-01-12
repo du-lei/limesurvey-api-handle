@@ -1,6 +1,13 @@
 {
   "name": "laravel-limesurvey-api/handle",
   "description": "limesurvey api handle base on laravel",
+  "keyword": [
+    "limesurvey",
+    "laravel-limesurvey",
+    "limesurvey-api",
+    "json-RPC",
+    "limesurvey-jsonRPC"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -28,7 +35,6 @@
         "LaravelLimesurveyApi\\Handle\\LaravelLimesurveyApiProvider"
       ],
       "aliases": {
-
       }
     }
   }
