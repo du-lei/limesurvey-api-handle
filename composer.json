@@ -15,7 +15,9 @@
     }
   },
   "minimum-stability": "dev",
-  "require": {},
+  "require": {
+    "weberhofer/jsonrpcphp": "^2.2"
+  },
   "require-dev": {
     "phpunit/phpunit": "^6.5",
     "weberhofer/jsonrpcphp": "^2.2"
