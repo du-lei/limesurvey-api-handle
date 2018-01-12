@@ -8,7 +8,7 @@ composer require "laravel-limesurvey-api/handle: dev-master"
 ```
 "laravel-limesurvey-api/handle": "dev-master"
 ```
-### 发布配置文件
+### 创建配置文件
 ```
-php artisan vendor:publish
+php artisan vendor:publish --provider="LaravelLimesurveyApi\\Handle\\LaravelLimesurveyApiProvider"
 ```
