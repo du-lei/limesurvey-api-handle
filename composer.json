@@ -21,5 +21,12 @@
   "require-dev": {
     "phpunit/phpunit": "^6.5",
     "weberhofer/jsonrpcphp": "^2.2"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelLimesurveyApi\\Handle\\LaravelLimesurveyApiProvider"
+      ]
+    }
   }
 }
