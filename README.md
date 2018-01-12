@@ -12,5 +12,5 @@ composer require "laravel-limesurvey-api/handle: dev-master"
 ```
 php artisan vendor:publish --provider="LaravelLimesurveyApi\Handle\LaravelLimesurveyApiProvider"
 ```
-### License
+## License
 MIT
