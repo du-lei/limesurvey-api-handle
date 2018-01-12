@@ -21,8 +21,6 @@ class LaravelLimesurveyApiProvider extends ServiceProvider
         $this->publishes( [
             __DIR__ . '/config/limesurveyApiHandle.php' => config_path( 'limesurveyApiHandle.php' ),
         ] );
-
-        $this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 
     /**
