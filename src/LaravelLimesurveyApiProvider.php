@@ -18,7 +18,9 @@ class LaravelLimesurveyApiProvider extends ServiceProvider
      */
     public function boot ()
     {
-        //
+        $this->publishes( [
+            __DIR__ . '/config/limesurveyApiHandle.php' => config_path( 'limesurveyApiHandle.php' ),
+        ] );
     }
 
     /**
