@@ -1,9 +1,5 @@
-<p align="center">
-<span style="font-size:16px">开发laravel扩展</span><br>
-<span>用于请求 limesurvey api 获取后台数据</span><br><br>
-<a href="https://github.com/du-lei/limesurvey-api-handle"><img src="https://travis-ci.org/du-lei/limesurvey-api-handle.svg?branch=master" alt="Build Status"></a>
-<a href="https://github.com/du-lei/limesurvey-api-handle"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## 开发laravel扩展
+###用于请求 limesurvey api 获取后台数据
 
 ### 用法
 ```
