@@ -26,7 +26,10 @@
     "laravel": {
       "providers": [
         "LaravelLimesurveyApi\\Handle\\LaravelLimesurveyApiProvider"
-      ]
+      ],
+      "aliases": {
+
+      }
     }
   }
 }
