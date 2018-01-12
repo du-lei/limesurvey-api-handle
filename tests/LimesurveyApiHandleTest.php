@@ -11,7 +11,11 @@ class LimesurveyApiHandleTest extends TestCase
 
     public function setUp ()
     {
-        $this->limesurveyApiHandle = new \LaravelLimesurveyApi\Handle\LimesurveyApiHandle();
+        $url = 'http://test.bbooks.org/index.php?r=admin/remotecontrol';
+        $username = 'admin';
+        $password = 'admin888';
+
+        $this->limesurveyApiHandle = new \LaravelLimesurveyApi\Handle\LimesurveyApiHandle( $url, $username, $password );
     }
 
     /**

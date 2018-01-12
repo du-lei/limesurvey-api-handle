@@ -11,11 +11,11 @@ use org\jsonrpcphp\JsonRPCClient;
  */
 class LimesurveyApiHandle
 {
-    protected $url = 'http://test.bbooks.org/index.php?r=admin/remotecontrol';
+    protected $url;
 
-    protected $username = 'admin';
+    protected $username;
 
-    protected $password = 'admin888';
+    protected $password;
 
     protected $jsonRPCClient;
 
@@ -23,9 +23,19 @@ class LimesurveyApiHandle
 
     /**
      * LimesurveyApiHandle constructor.
+     *
+     * @param $url
+     * @param $username
+     * @param $password
      */
-    public function __construct ()
+    public function __construct ( $url, $username, $password )
     {
+        $this->url = $url;
+
+        $this->username = $username;
+
+        $this->password = $password;
+
         $this->get_jsonRPCClient();
 
         $this->get_session_key();
