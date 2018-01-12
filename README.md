@@ -1,4 +1,4 @@
-## 开发基于laravel的用于请求 limesurvey api 获取后台数据的数据
+## 开发基于laravel的用于请求 limesurvey api 获取后台数据的扩展
 
 ### 用法
 ```
