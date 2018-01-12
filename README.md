@@ -7,3 +7,8 @@ composer require "laravel-limesurvey-api/handle: dev-master"
 ### 或者在你的```composer.json``` 的 require 部分添加
 ```
 "laravel-limesurvey-api/handle": "dev-master"
+
+### 发布配置文件
+```
+php artisan vendor:publish
+```
