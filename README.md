@@ -11,7 +11,7 @@ composer require laravel-limesurvey-api/handle
 ```
 ### 或者在你的```composer.json``` 的 require 部分添加
 ```
-"laravel-limesurvey-api/handle": "~1.0"
+"laravel-limesurvey-api/handle": "dev-master"
 ```
 ### 下载完毕后，直接配置 ```app/config.php``` 的 ```providers```:
 ```
