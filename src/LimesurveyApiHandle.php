@@ -40,7 +40,7 @@ class LimesurveyApiHandle
 
         $this->get_jsonRPCClient();
 
-        $this->get_session_key();
+        $this->session_key = $this->get_session_key( $this->username, $this->password );
     }
 
     private function get_jsonRPCClient ()
@@ -61,10 +61,14 @@ class LimesurveyApiHandle
      *
      * @access public
      *
+     * @param string $username
+     * @param string $password
+     *
+     * @return string|array
      */
-    private function get_session_key ()
+    public function get_session_key ( $username, $password )
     {
-        $this->session_key = $this->jsonRPCClient->get_session_key( $this->username, $this->password );
+        return $this->jsonRPCClient->get_session_key( $username, $password );
     }
 
     /**
