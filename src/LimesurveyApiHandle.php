@@ -730,7 +730,7 @@ class LimesurveyApiHandle
      *
      * @return array The list of tokens
      */
-    public function list_participants ( $iSurveyID, $iStart, $iLimit, $bUnused, $aAttributes, $aConditions )
+    public function list_participants ( $iSurveyID, $iStart = 0, $iLimit = 10, $bUnused = false, $aAttributes = false, array $aConditions = [] )
     {
         return $this->jsonRPCClient->list_participants( $this->session_key, $iSurveyID, $iStart, $iLimit, $bUnused, $aAttributes, $aConditions );
     }
