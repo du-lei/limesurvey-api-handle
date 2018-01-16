@@ -736,8 +736,6 @@ class LimesurveyApiHandle
     }
 
     /**
-     * TODO
-     *
      * Return the ids and info of (sub-)questions of a survey/group.
      * Returns array of ids and info.
      *
@@ -749,7 +747,7 @@ class LimesurveyApiHandle
      *
      * @return array The list of questions
      */
-    public function list_questions ( $iSurveyID, $iGroupID, $sLanguage )
+    public function list_questions ( $iSurveyID, $iGroupID, $sLanguage = 'zh-Hans' )
     {
         return $this->jsonRPCClient->list_questions( $this->session_key, $iSurveyID, $iGroupID, $sLanguage );
     }
