@@ -118,7 +118,7 @@ class LimesurveyApiHandle
      *
      * @return array|int The id of the new group - Or status
      */
-    public function add_group ( $iSurveyID, $sGroupTitle, $sGroupDescription )
+    public function add_group ( $iSurveyID, $sGroupTitle, $sGroupDescription = '' )
     {
         return $this->jsonRPCClient->addGroup( $this->session_key, $iSurveyID, $sGroupTitle, $sGroupDescription );
     }
@@ -692,8 +692,6 @@ class LimesurveyApiHandle
     }
 
     /**
-     * TODO
-     *
      * Return the ids and all attributes of groups belonging to survey.
      *
      * @access public
