@@ -706,8 +706,6 @@ class LimesurveyApiHandle
     }
 
     /**
-     * TODO
-     *
      * Return the ids and propertries of token/participants of a survey.
      *
      * if $bUnused is true, user will get the list of uncompleted tokens (token_return functionality).
